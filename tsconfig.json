@@ -1,10 +1,28 @@
 {
-  "extends": "ts-config-single-spa",
   "compilerOptions": {
+    "lib": ["DOM", "ES2020"],
     "jsx": "react-jsx",
-    "declarationDir": "dist"
+    "target": "ES2020",
+    "noEmit": true,
+    "skipLibCheck": true,
+    "useDefineForClassFields": true,
+
+    /* modules */
+    "module": "ESNext",
+    "moduleDetection": "force",
+    "moduleResolution": "bundler",
+    "verbatimModuleSyntax": true,
+    "resolveJsonModule": true,
+    "allowImportingTsExtensions": true,
+    "noUncheckedSideEffectImports": true,
+
+    /* type checking */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "paths": {
+      "*": ["./@mf-types/*"]
+    }
   },
-  "files": ["src/froneus-froneus-home.tsx"],
-  "include": ["src/**/*"],
-  "exclude": ["src/**/*.test*"]
+  "include": ["src"]
 }
