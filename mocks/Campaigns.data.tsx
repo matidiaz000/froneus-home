@@ -1,6 +1,7 @@
 export interface ICampaignsData {
+    id: number,
     name: string,
-    state: "En espera" | "Activa" | "Finalizada",
+    state: "En espera" | "Activa" | "Finalizada" | null,
     campaign: Array<{
         name: string,
         create: string,
@@ -12,6 +13,7 @@ export interface ICampaignsData {
 
 export const CampaignsData : Array<ICampaignsData> = [
     {
+        id: 0,
         name: "Primera Campaña",
         state: "En espera",
         contacts: [0,4,5],
@@ -37,6 +39,7 @@ export const CampaignsData : Array<ICampaignsData> = [
         ]
     },
     {
+        id: 1,
         name: "Segunda Campaña",
         state: "Activa",
         contacts: [0,3,5,6],
