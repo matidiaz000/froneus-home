@@ -1,4 +1,16 @@
-# Rsbuild project
+# Froneus Home project
+
+## Microfrontend
+
+Clone two microfrontend projects and run the following steps simultaneously.
+
+```bash
+git clone git@github.com:matidiaz000/froneus-root.git
+```
+
+```bash
+git clone git@github.com:matidiaz000/froneus-home.git
+```
 
 ## Setup
 
@@ -15,22 +27,3 @@ Start the dev server, and the app will be available at [http://localhost:3000](h
 ```bash
 pnpm dev
 ```
-
-Build the app for production:
-
-```bash
-pnpm build
-```
-
-Preview the production build locally:
-
-```bash
-pnpm preview
-```
-
-## Learn more
-
-To learn more about Rsbuild, check out the following resources:
-
-- [Rsbuild documentation](https://rsbuild.rs) - explore Rsbuild features and APIs.
-- [Rsbuild GitHub repository](https://github.com/web-infra-dev/rsbuild) - your feedback and contributions are welcome!
